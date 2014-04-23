@@ -19,6 +19,10 @@
 		0F0C117E19079A0C00966318 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F0C116619079A0C00966318 /* UIKit.framework */; };
 		0F0C118619079A0C00966318 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0F0C118419079A0C00966318 /* InfoPlist.strings */; };
 		0F0C118819079A0C00966318 /* UI____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0C118719079A0C00966318 /* UI____Tests.m */; };
+		0F0C119319079A3700966318 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0C119219079A3700966318 /* RootViewController.m */; };
+		0F0C11951907B15400966318 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F0C11941907B15400966318 /* libxml2.dylib */; };
+		0F0C11981907BDC700966318 /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0C11971907BDC700966318 /* GDataXMLNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0F0C11A11907C88800966318 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0C11A01907C88800966318 /* MapViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,13 @@
 		0F0C118319079A0C00966318 /* UI高级测试Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UI高级测试Tests-Info.plist"; sourceTree = "<group>"; };
 		0F0C118519079A0C00966318 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0F0C118719079A0C00966318 /* UI____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UI____Tests.m"; sourceTree = "<group>"; };
+		0F0C119119079A3700966318 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		0F0C119219079A3700966318 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		0F0C11941907B15400966318 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		0F0C11961907BDC700966318 /* GDataXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataXMLNode.h; sourceTree = "<group>"; };
+		0F0C11971907BDC700966318 /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataXMLNode.m; sourceTree = "<group>"; };
+		0F0C119F1907C88800966318 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		0F0C11A01907C88800966318 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F0C11951907B15400966318 /* libxml2.dylib in Frameworks */,
 				0F0C116519079A0C00966318 /* CoreGraphics.framework in Frameworks */,
 				0F0C116719079A0C00966318 /* UIKit.framework in Frameworks */,
 				0F0C116319079A0C00966318 /* Foundation.framework in Frameworks */,
@@ -77,6 +89,8 @@
 		0F0C115619079A0B00966318 = {
 			isa = PBXGroup;
 			children = (
+				0F0C11961907BDC700966318 /* GDataXMLNode.h */,
+				0F0C11971907BDC700966318 /* GDataXMLNode.m */,
 				0F0C116819079A0C00966318 /* UI高级测试 */,
 				0F0C118119079A0C00966318 /* UI高级测试Tests */,
 				0F0C116119079A0C00966318 /* Frameworks */,
@@ -96,6 +110,7 @@
 		0F0C116119079A0C00966318 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0F0C11941907B15400966318 /* libxml2.dylib */,
 				0F0C116219079A0C00966318 /* Foundation.framework */,
 				0F0C116419079A0C00966318 /* CoreGraphics.framework */,
 				0F0C116619079A0C00966318 /* UIKit.framework */,
@@ -109,6 +124,10 @@
 			children = (
 				0F0C117119079A0C00966318 /* AppDelegate.h */,
 				0F0C117219079A0C00966318 /* AppDelegate.m */,
+				0F0C119119079A3700966318 /* RootViewController.h */,
+				0F0C119219079A3700966318 /* RootViewController.m */,
+				0F0C119F1907C88800966318 /* MapViewController.h */,
+				0F0C11A01907C88800966318 /* MapViewController.m */,
 				0F0C117419079A0C00966318 /* Images.xcassets */,
 				0F0C116919079A0C00966318 /* Supporting Files */,
 			);
@@ -240,7 +259,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F0C117319079A0C00966318 /* AppDelegate.m in Sources */,
+				0F0C11981907BDC700966318 /* GDataXMLNode.m in Sources */,
+				0F0C11A11907C88800966318 /* MapViewController.m in Sources */,
 				0F0C116F19079A0C00966318 /* main.m in Sources */,
+				0F0C119319079A3700966318 /* RootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,7 +383,13 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UI高级测试/UI高级测试-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Applications/Xcode\\ 3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
+					/usr/include/libxml2,
+				);
 				INFOPLIST_FILE = "UI高级测试/UI高级测试-Info.plist";
+				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -374,7 +402,13 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UI高级测试/UI高级测试-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Applications/Xcode\\ 3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
+					/usr/include/libxml2,
+				);
 				INFOPLIST_FILE = "UI高级测试/UI高级测试-Info.plist";
+				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
